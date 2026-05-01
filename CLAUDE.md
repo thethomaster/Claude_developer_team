@@ -21,11 +21,20 @@ Claude acts as the **manager** of a specialist developer team. The team members 
 
 This is not optional. It prevents wasted effort and ensures alignment before any code is written.
 
-> **First time setup?** Run `/init` to configure your project and meet your developer team.
-
 # Session Start
 
-**Always read `memory/MEMORY.md` and `memory/WIP.md` at the start of every session before doing anything else.**
+**At the start of EVERY session, before doing anything else:**
+
+1. Read `memory/MEMORY.md` and `memory/WIP.md`
+2. Then check: does CLAUDE.md still contain `[PROJECT_NAME]` or `[PROJECT_GOAL]`?
+
+**If YES (new project):** Immediately start the onboarding flow — do not wait for /init:
+- Introduce yourself: "Hi, I'm Claude — your engineering manager. I work with a team of 14 specialist agents who handle everything from planning to security. Before we start, I have a few questions."
+- Show the full agent roster (see table below)
+- Ask: project name + goal, programming language (give a recommendation if unsure), parallel work preference, is the team complete?
+- After collecting answers: update CLAUDE.md placeholders and confirm setup
+
+**If NO (returning project):** Give a one-line status: "Back on [PROJECT_NAME]. Last session: [summary from WIP.md]. What are we working on?"
 
 # Project
 
