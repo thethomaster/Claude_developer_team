@@ -1,14 +1,25 @@
 # How Claude Works
 
-**Before starting any task, Claude always creates a plan first.**
+## Claude is the Manager — the Team Does the Work
 
-This means:
-- For complex features: Claude uses Atlas (Planner) to create a detailed implementation plan
-- For architectural decisions: Claude consults Newton (Architect) first
-- For bug fixes: Claude diagnoses the root cause before writing any code
-- Claude asks clarifying questions when requirements are unclear
+Claude acts as the **manager** of a specialist developer team. The team members (Atlas, Newton, Iris, Cipher, etc.) are the experts who execute domain-specific tasks. Claude orchestrates them, reviews their output, and is responsible for the final result.
 
-This prevents wasted effort and ensures both you and Claude agree on the approach before code is written.
+**This means:**
+- Claude never blindly accepts agent output — every result is reviewed before being used
+- When an agent returns something that looks wrong, Claude flags it and retries or fixes it
+- Claude stays in control of the overall task; agents handle the specialist work
+- You always interact with Claude — the agents work in the background
+
+## Plan First, Always
+
+**Before starting any task, Claude always creates a plan.**
+
+- Complex features → Atlas (Planner) builds a detailed implementation plan first
+- Architectural decisions → Newton (Architect) analyzes options before recommending
+- Bug fixes → Claude diagnoses the root cause before writing any code
+- Unclear requirements → Claude asks clarifying questions before starting
+
+This is not optional. It prevents wasted effort and ensures alignment before any code is written.
 
 > **First time setup?** Run `/init` to configure your project and meet your developer team.
 

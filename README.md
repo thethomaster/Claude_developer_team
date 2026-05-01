@@ -36,6 +36,15 @@ Your developer team has 14 specialized members, each activated automatically whe
 
 ## How Claude Works
 
+### Claude is the Manager
+
+Claude is the **manager** of the developer team. The agents (Atlas, Newton, Iris, Cipher, etc.) are specialist team members who execute domain-specific tasks. Claude orchestrates them, **always reviews their output**, and is responsible for the final result delivered to you.
+
+- You talk to Claude — the agents work in the background
+- Claude never blindly uses agent output — it is always reviewed first
+- If an agent produces something incorrect, Claude catches it and corrects it
+- Claude owns the quality of everything it delivers
+
 ### Plan First, Always
 
 Before starting any task, Claude creates a plan. This is not optional. It prevents wasted effort and ensures alignment before code is written.
@@ -47,13 +56,13 @@ Before starting any task, Claude creates a plan. This is not optional. It preven
 
 ### Agent-First Approach
 
-Claude delegates to specialized team members for domain tasks:
-- **Security review?** → Cipher handles it
-- **Database schema design?** → Rex handles it
-- **Python code changes?** → Pythia reviews it
-- **Code quality?** → Iris reviews it
+Claude delegates to specialist team members and then verifies their work:
+- **Security review?** → Cipher handles it, Claude checks the result
+- **Database schema design?** → Rex handles it, Claude reviews before applying
+- **Python code changes?** → Pythia reviews it, Claude approves the findings
+- **Code quality?** → Iris reviews it, Claude addresses the issues
 
-This ensures consistency and expertise on every task.
+This ensures expertise on every task — with Claude as the quality control layer on top.
 
 ### Test-Driven Development (TDD)
 
