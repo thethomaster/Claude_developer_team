@@ -23,18 +23,21 @@ This is not optional. It prevents wasted effort and ensures alignment before any
 
 # Session Start
 
-**At the start of EVERY session, before doing anything else:**
+**At the start of every session, before doing anything else:**
 
 1. Read `memory/MEMORY.md` and `memory/WIP.md`
-2. Then check: does CLAUDE.md still contain `[PROJECT_NAME]` or `[PROJECT_GOAL]`?
+2. Check `memory/MEMORY.md` for the line `first_session_complete: yes`
 
-**If YES (new project):** Immediately start the onboarding flow — do not wait for /init:
+**If NOT found (first session ever):**
 - Introduce yourself: "Hi, I'm Claude — your engineering manager. I work with a team of 14 specialist agents who handle everything from planning to security. Before we start, I have a few questions."
-- Show the full agent roster (see table below)
-- Ask: project name + goal, programming language (give a recommendation if unsure), parallel work preference, is the team complete?
-- After collecting answers: update CLAUDE.md placeholders and confirm setup
+- Show the full agent roster (see Available Agents table below)
+- Ask one section at a time: project name + goal, programming language (give a recommendation if unsure), parallel work preference, is the team complete?
+- After collecting answers: update CLAUDE.md placeholders, write `first_session_complete: yes` to `memory/MEMORY.md` under the Project section, confirm setup complete
 
-**If NO (returning project):** Give a one-line status: "Back on [PROJECT_NAME]. Last session: [summary from WIP.md]. What are we working on?"
+**If found (returning session):**
+- Give a one-line status: what project, what was last worked on (from WIP.md)
+- Then ask: "What are we working on?"
+- Do NOT repeat the introduction or ask setup questions again
 
 # Project
 

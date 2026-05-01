@@ -1,9 +1,10 @@
 # Memory Index
 
-_No memories yet. Claude will populate this as you work together._
+## Setup
+first_session_complete: no
 
 ## Feedback
-_(How Claude should approach work on this project)_
+_(How Claude should approach work on this project — updated as you work together)_
 
 ## Project
 _(Ongoing decisions, goals, deadlines)_
